@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Parallax Website</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color:white;
+        }
+        h3{
+            padding:20px ;
+            text-align: center;
+            color:black;
+        }
+        p{
+            padding:20px;
+            line-height: 1.4em;
+            text-align: center;
+            color:black
+        }
+        .first-container, .seventh-container{
+            background-image:url("Image/mountainer.jpg");
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+           min-height:100vh;
+        }
+        .second-container{
+           min-height: 10vh;
+            background-color:white;  
+        }
+        .third-container,.fifth-container{
+            min-height: 50vh;
+            background-image: url("image/road.jpg");
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .forth-container,.sixth-container{
+            min-height: 30vh;
+            /* background-color: darkslategrey; */
+            background-color: darkslategrey;
+           
+        }
+        .forth-container p,.sixth-container p{
+            color:white;
+            font-family:'Courier New', Courier, monospace;
+            font-size: larger;
+        }
+       
+        .flex{
+            display: flex;
+           flex-direction: column;
+           justify-content: center;
+           align-items: center;
+        }
+       @media only screen and  (min-width:400px){
+        .second-container{
+            min-height: 50vh;
+        }
+       }
+    </style>
+</head>
+<body>
+    <div class="first-container flex ">
+        <h2>SCROLL DOWN</h3>
+    </div>
+    <div class="second-container flex">
+        <h3>PARALLAX DEMO</h3>
+        <p>Lorem  demo of everything is here bro ipsum dolor sit amet consectetur  pariatur  Vel maiores, optio qui praesentium quasi aliquid rerum possimus deleniti amet, beatae libero molestias? Recusandae saepe facilis omnis sed commodi repellendus quis. Sit velit accusantium eos animi ut libero voluptate! Ullam quas ducimus dolore tempora excepturi id molestiae soluta ipsa corrupti suscipit vel odit delectus aperiam eaque doloremque, fugit corporis mollitia quibusdam rem veritatis vero in fugiat iste laboriosam. Aliquid ab quibusdam iste, delectus quas quisquam.</p>
+    </div>
+    <div class="third-container flex ">
+        <h2>LESS HEIGHT</h2>
+    </div>
+    <div class="forth-container flex">
+        <p>Scroll up and down to really get the feeling of how Parallax Scrolling works.</p>
+    </div>
+    <div class="fifth-container flex ">
+        <h2 class="middle">SCROLL UP</h2>
+    </div>
+    <div class="sixth-container flex">
+        <p>Scroll up and down to really get the feeling of how Parallax Scrolling works.</p>
+    </div>
+    <div class="seventh-container flex ">
+        <h2 class="middle">COOL!</h2>
+    </div>
+</body>
+</html>
